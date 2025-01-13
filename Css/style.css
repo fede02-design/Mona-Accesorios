@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*pagina principal (index.html)*/
+
+body{
+    background-color: white;
+    font-style: italic;
+}
+
+header{
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+}
+/*encabezado (menuH/logo/usuario)*/
+
+
+header .container_menu ul{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+header .container_menu ul li{
+    display: flex;
+    list-style: none;
+    height:100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container_menu ul li a img{
+   
+    text-decoration: none;
+    color: black;
+
+}
+/*
+.Menu_H{
+    display: grid;
+    z-index: 1030;
+    place-items: center;
+    height: 10px;
+}
+*/
+.img_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    position: relative;
+    left: 30px;
+}
+
+.img_user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+}
+
+/*buscador*/
+.container_search{
+    background-color: antiquewhie;
+    display: flex;
+    justify-content: center;
+}
+
+/*carrusel*/
+
+.carrusel h1{
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-item {
+    position: relative;
+    width: 90%;
+    height: 400px;
+    left: 15px;
+    top: 50px;
+}
+
+.carrusel-item img{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*stock completo*/
+
+.stock h2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.productos ul{
+    list-style: none;
+}
+
+.productos ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.productos ul li img{
+    width: 100px;
+    border: 3px solid rgb(196, 155, 67);
+    border-radius: 20px;
+}
+
+.productos p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 10px;
+}
+
+/*pie de pagina*/
+
+.btn_ayuda{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width:550px){ /*va de los 300 a los 600 px*/
+    .container_search input{
+        width: 450px;
+    }
+}
+
+/*pagina de logueo*/
+
+.container_login{
+    display: flex;
+    margin: 50px;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    border: 2px solid black
+}
+
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
