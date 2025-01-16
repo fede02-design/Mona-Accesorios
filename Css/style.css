@@ -54,7 +54,7 @@ header .container_menu ul li a img{
     width: 150px;
     height: 100%;
     position: relative;
-    left: 30px;
+    left: 35px;
 }
 
 .img_user{
@@ -62,7 +62,9 @@ header .container_menu ul li a img{
     justify-content: center;
     align-items: center;
     width: 45px;
+    height: 100%;
 }
+
 
 /*buscador*/
 .container_search{
@@ -77,22 +79,23 @@ header .container_menu ul li a img{
     display:flex;
     justify-content: center;
     margin-top: 10px;
+    text-decoration: underline;
 }
 
 .carousel-item {
     position: relative;
-    width: 90%;
+    width: 50%;
     height: 400px;
-    left: 15px;
+    left: 215px;
     top: 50px;
 }
 
 .carrusel-item img{
     display: flex;
+    border-radius: inherit;
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
-    justify-content: center;
+    /*object-fit: contain;*/
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -144,6 +147,25 @@ header .container_menu ul li a img{
     }
 }
 
+@media (min-width: 400px){
+    .productos ul li img{
+        width: 150px;
+    }
+}
+
+@media (min-width: 500px){
+    .productos ul li img{
+        width: 200px;
+        transition: 10ms;
+    }
+}
+
+@media (min-width: 650px){
+    .productos ul li img{
+        width: 250px;
+    }
+}
+
 /*pagina de logueo*/
 
 .container_login{
@@ -160,4 +182,38 @@ header .container_menu ul li a img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*pagina comprar ojotas*/
+.img_grande{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+
+.img_grande img{
+    width: 85%;
+}
+
+.descripcion{
+    margin: 40px;
+    border: 2px solid rgb(122, 73, 73);
+    border-radius: 10px;
+}
+
+.descripcion p{
+    text-align: center;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: center;
+}
+
+.comprar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 35px;
+    margin-bottom: 10px
 }
