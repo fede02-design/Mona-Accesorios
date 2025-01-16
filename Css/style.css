@@ -84,9 +84,9 @@ header .container_menu ul li a img{
 
 .carousel-item {
     position: relative;
-    width: 50%;
+    width: 100%;
+    padding: 20px;
     height: 400px;
-    left: 215px;
     top: 50px;
 }
 
@@ -99,6 +99,8 @@ header .container_menu ul li a img{
     margin-left: 100px;
     margin-right: 100px;
 }
+
+
 
 /*stock completo*/
 
@@ -192,7 +194,7 @@ header .container_menu ul li a img{
 }
 
 .img_grande img{
-    width: 85%;
+    width: 80%;
 }
 
 .descripcion{
@@ -216,4 +218,67 @@ header .container_menu ul li a img{
     position: relative;
     top: 35px;
     margin-bottom: 10px
+}
+
+.pie{
+    margin:100px;
+}
+
+/*talles*/
+
+/* Estilo del contenedor del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo del botón */
+.dropdown button {
+    background-color: #9a7a4a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ /* Estilo de la lista desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Estilo de los enlaces dentro de la lista */
+.dropdown-content p {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Quitar el borde inferior del último elemento */
+.dropdown-content p:last-child {
+    border-bottom: none;
+}
+
+/* Estilo de hover para los enlaces */
+.dropdown-content p:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar la lista al hacer hover sobre el contenedor */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Cambiar el color del botón al hacer hover */
+.dropdown:hover button {
+    background-color: #939a5c;
 }
