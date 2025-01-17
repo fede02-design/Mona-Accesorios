@@ -75,6 +75,11 @@ header .container_menu ul li a img{
 
 /*carrusel*/
 
+.slide{
+    display: flex;
+    justify-content: center;
+}
+
 .carrusel h1{
     display:flex;
     justify-content: center;
@@ -84,30 +89,76 @@ header .container_menu ul li a img{
 
 .carousel-item {
     position: relative;
-    width: 100%;
-    padding: 20px;
-    height: 400px;
-    top: 50px;
+    padding: 10px;
+    height: 280px;
+    object-fit: cover;
 }
 
 .carrusel-item img{
-    display: flex;
-    border-radius: inherit;
     max-width: 100%;
-    max-height: 100%;
-    /*object-fit: contain;*/
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
+@media (min-width: 350px){
+    .carousel-inner{
+        padding: 20px;
+        height: 400px;
+    }
+}
 
+@media (min-width: 420px){
+    .carousel-inner{
+        height: 500px;
+        padding: 35px;
+    }
+}
+
+@media (min-width: 540px){
+    .carousel-inner{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+
+@media (min-width: 720px){
+    .carousel-inner{
+        height: 700px;
+    }
+}
+
+@media (min-width: 840px){
+    .carousel-inner{
+        height: 800px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (min-width: 900px){
+    .carousel-inner{
+        padding-left: 100px;
+        padding-right: 100px;   
+    }
+}
+
+@media (min-width: 1000px){
+    .carousel-inner{
+        padding-left: 200px;
+        padding-right: 200px;  
+    }
+}
+
+@media (min-width: 1200px){
+    .carousel-inner{
+        padding-left: 370px;
+        padding-right: 370px;  
+    }
+}
 
 /*stock completo*/
 
 .stock h2{
     display: flex;
     justify-content: center;
-    position: relative;
     width: 100%;
 }
 
@@ -167,6 +218,8 @@ header .container_menu ul li a img{
         width: 250px;
     }
 }
+
+
 
 /*pagina de logueo*/
 
@@ -281,4 +334,38 @@ header .container_menu ul li a img{
 /* Cambiar el color del botón al hacer hover */
 .dropdown:hover button {
     background-color: #939a5c;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 500px){
+    .img_grande{
+        padding: 20px;
+        margin: 20px;
+    }
+
+}
+
+@media (min-width: 650px){
+    .img_grande{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
+@media (min-width: 750px){
+    .img_grande{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1000px){
+    .img_grande{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
 }
