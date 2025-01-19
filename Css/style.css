@@ -1,10 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Smooch+Sans:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Playwrite+VN:wght@100..400&family=Smooch+Sans:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 /*pagina principal (index.html)*/
 
-body{
+.cuerpo_index{
     background-color: white;
     font-style: italic;
 }
@@ -68,7 +73,7 @@ header .container_menu ul li a img{
 
 /*buscador*/
 .container_search{
-    background-color: antiquewhie;
+    background-color:antiquewhite;  
     display: flex;
     justify-content: center;
 }
@@ -217,29 +222,14 @@ header .container_menu ul li a img{
     .productos ul li img{
         width: 250px;
     }
-}
-
-
-
-/*pagina de logueo*/
-
-.container_login{
-    display: flex;
-    margin: 50px;
-    margin-top: 0;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
-    border: 2px solid black
-}
-
-.container div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+}x
 
 /*pagina comprar ojotas*/
+.venta{
+    display: flex;
+    justify-content: center;
+}
+
 .img_grande{
     display: flex;
     justify-content: center;
@@ -369,3 +359,62 @@ header .container_menu ul li a img{
         margin-right: 250px;
     }
 }
+
+/*logueo*/
+
+.cuerpo_login{ /*body del login*/
+    background-color: white;
+}
+
+.menu_login a{
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+.log h1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+    margin-bottom: 20px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    padding-left: 131px;
+    padding-right: 132px;
+    padding-top: 100px;
+    
+}
+
+.M_register{
+    display: flex;
+    justify-content: center;
+}
+
+.inicioS{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.pie_login{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    font-family: "PT Serif", serif;
+}
+
+header{
+    font-family: "PT Serif", serif;
+}
+
+
+
