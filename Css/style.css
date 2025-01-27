@@ -14,12 +14,10 @@
     font-style: italic;
 }
 
+/*encabezado (menuH/logo/usuario)*/
 header{
     background-color: antiquewhite;
-    margin-bottom: 10px;
 }
-/*encabezado (menuH/logo/usuario)*/
-
 
 header .container_menu ul{
     display: grid;
@@ -70,7 +68,6 @@ header .container_menu ul li a img{
     height: 100%;
 }
 
-
 /*buscador*/
 .container_search{
     background-color:antiquewhite;  
@@ -94,8 +91,8 @@ header .container_menu ul li a img{
 
 .carousel-item {
     position: relative;
-    padding: 10px;
     height: 280px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -154,8 +151,8 @@ header .container_menu ul li a img{
 
 @media (min-width: 1200px){
     .carousel-inner{
-        padding-left: 370px;
-        padding-right: 370px;  
+        padding-left: 300px;
+        padding-right: 300px;  
     }
 }
 
@@ -416,5 +413,28 @@ header{
     font-family: "PT Serif", serif;
 }
 
+/*menu de registro*/
 
+label{
+    display: flex;
+    align-items: center;
+}
+input{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    
+}
+
+form{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
 
