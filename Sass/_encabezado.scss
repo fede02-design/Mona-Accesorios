@@ -1,0 +1,36 @@
+header{
+    background-color: $ColorPrimarioMona;
+    div{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 20px;
+            li{
+                .img_logo{
+                    width: 150px;
+                    animation: move-box 1.5s infinite alternate;
+                }
+                .img_user{
+                    width: 50px; 
+                }
+            }
+        }
+    }
+    .container_search{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@keyframes move-box{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+
+

@@ -1,0 +1,48 @@
+.carrusel{
+    display: grid;
+    justify-content: center;
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+    .carrusel_1{
+        width: 300px;
+    }
+}
+
+.stock{
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+    .productos{
+        position: relative;
+        right: 17px;
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            list-style: none;
+            li a{
+                display: flex;
+                justify-content: center;
+            }
+            li p{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.productos img{
+    width: $ImagenStock;
+}
+
+
+
+
+
+
+
+
+

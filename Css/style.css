@@ -1,440 +1,78 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Smooch+Sans:wght@100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Playwrite+VN:wght@100..400&family=Smooch+Sans:wght@100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-}
-/*pagina principal (index.html)*/
-
-.cuerpo_index{
-    background-color: white;
-    font-style: italic;
-}
-
-/*encabezado (menuH/logo/usuario)*/
-header{
-    background-color: antiquewhite;
-}
-
-header .container_menu ul{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    justify-content: center;
-    position: relative;
-    top: 10px;
-}
-
-header .container_menu ul li{
-    display: flex;
-    list-style: none;
-    height:100px;
-    width: 100px;
-    justify-content: center;
-    align-items: center;
-}
-
-header .container_menu ul li a img{
-   
-    text-decoration: none;
-    color: black;
-
-}
-/*
-.Menu_H{
-    display: grid;
-    z-index: 1030;
-    place-items: center;
-    height: 10px;
-}
-*/
-.img_logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    position: relative;
-    left: 35px;
-}
-
-.img_user{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 100%;
-}
-
-/*buscador*/
-.container_search{
-    background-color:antiquewhite;  
-    display: flex;
-    justify-content: center;
-}
-
-/*carrusel*/
-
-.slide{
-    display: flex;
-    justify-content: center;
-}
-
-.carrusel h1{
-    display:flex;
-    justify-content: center;
-    margin-top: 10px;
-    text-decoration: underline;
-}
-
-.carousel-item {
-    position: relative;
-    height: 280px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.carrusel-item img{
-    max-width: 100%;
-}
-
-@media (min-width: 350px){
-    .carousel-inner{
-        padding: 20px;
-        height: 400px;
-    }
-}
-
-@media (min-width: 420px){
-    .carousel-inner{
-        height: 500px;
-        padding: 35px;
-    }
-}
-
-@media (min-width: 540px){
-    .carousel-inner{
-        padding-left: 90px;
-        padding-right: 90px;
-    }
-}
-
-@media (min-width: 720px){
-    .carousel-inner{
-        height: 700px;
-    }
-}
-
-@media (min-width: 840px){
-    .carousel-inner{
-        height: 800px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-}
-
-@media (min-width: 900px){
-    .carousel-inner{
-        padding-left: 100px;
-        padding-right: 100px;   
-    }
-}
-
-@media (min-width: 1000px){
-    .carousel-inner{
-        padding-left: 200px;
-        padding-right: 200px;  
-    }
-}
-
-@media (min-width: 1200px){
-    .carousel-inner{
-        padding-left: 300px;
-        padding-right: 300px;  
-    }
-}
-
-/*stock completo*/
-
-.stock h2{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.productos ul{
-    list-style: none;
-}
-
-.productos ul{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:5px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.productos ul li img{
-    width: 100px;
-    border: 3px solid rgb(196, 155, 67);
-    border-radius: 20px;
-}
-
-.productos p{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    right: 10px;
-}
-
-/*pie de pagina*/
-
-.btn_ayuda{
-    display: flex;
-    justify-content: flex-end;
-}
-
-@media (min-width:550px){ /*va de los 300 a los 600 px*/
-    .container_search input{
-        width: 450px;
-    }
-}
-
-@media (min-width: 400px){
-    .productos ul li img{
-        width: 150px;
-    }
-}
-
-@media (min-width: 500px){
-    .productos ul li img{
-        width: 200px;
-        transition: 10ms;
-    }
-}
-
-@media (min-width: 650px){
-    .productos ul li img{
-        width: 250px;
-    }
-}x
-
-/*pagina comprar ojotas*/
-.venta{
-    display: flex;
-    justify-content: center;
-}
-
-.img_grande{
-    display: flex;
-    justify-content: center;
-    margin-top:30px;
-}
-
-.img_grande img{
-    width: 80%;
-}
-
-.descripcion{
-    margin: 40px;
-    border: 2px solid rgb(122, 73, 73);
-    border-radius: 10px;
-}
-
-.descripcion p{
-    text-align: center;
-}
-
-.dropdown{
-    display: flex;
-    justify-content: center;
-}
-
-.comprar{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 35px;
-    margin-bottom: 10px
-}
-
-.pie{
-    margin:100px;
-}
-
-/*talles*/
-
-/* Estilo del contenedor del dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Estilo del botón */
-.dropdown button {
-    background-color: #9a7a4a;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
- /* Estilo de la lista desplegable */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 5px;
-}
-
-/* Estilo de los enlaces dentro de la lista */
-.dropdown-content p {
-    color: black;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Quitar el borde inferior del último elemento */
-.dropdown-content p:last-child {
-    border-bottom: none;
-}
-
-/* Estilo de hover para los enlaces */
-.dropdown-content p:hover {
-    background-color: #f1f1f1;
-}
-
-/* Mostrar la lista al hacer hover sobre el contenedor */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Cambiar el color del botón al hacer hover */
-.dropdown:hover button {
-    background-color: #939a5c;
-}
-
-.dropdown{
-    display: flex;
-    justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (min-width: 500px){
-    .img_grande{
-        padding: 20px;
-        margin: 20px;
-    }
-
+body {
+  background-color: white;
 }
 
-@media (min-width: 650px){
-    .img_grande{
-        margin-left: 70px;
-        margin-right: 70px;
-    }
+header {
+  background-color: antiquewhite;
 }
-
-@media (min-width: 750px){
-    .img_grande{
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+header div ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px;
 }
-
-@media (min-width: 1000px){
-    .img_grande{
-        margin-left: 250px;
-        margin-right: 250px;
-    }
+header div ul li .img_logo {
+  width: 150px;
+  animation: move-box 1.5s infinite alternate;
 }
-
-/*logueo*/
-
-.cuerpo_login{ /*body del login*/
-    background-color: white;
+header div ul li .img_user {
+  width: 50px;
 }
-
-.menu_login a{
-    display: flex;
-    justify-content: center;
-    color: black;
-    text-decoration: none;
+header .container_search {
+  display: flex;
+  justify-content: center;
 }
 
-.log h1{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 70px;
-    margin-bottom: 20px;
+@keyframes move-box {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
 }
-
-.contenedor{
-    display: flex;
-    justify-content: center;
-    padding-left: 131px;
-    padding-right: 132px;
-    padding-top: 100px;
-    
+.carrusel {
+  display: grid;
+  justify-content: center;
 }
-
-.M_register{
-    display: flex;
-    justify-content: center;
+.carrusel h1 {
+  display: flex;
+  justify-content: center;
 }
-
-.inicioS{
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+.carrusel .carrusel_1 {
+  width: 300px;
 }
 
-.pie_login{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    justify-content: center;
-    align-items: center;
+.stock h2 {
+  display: flex;
+  justify-content: center;
 }
-
-main{
-    font-family: "PT Serif", serif;
+.stock .productos {
+  position: relative;
+  right: 17px;
 }
-
-header{
-    font-family: "PT Serif", serif;
+.stock .productos ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
 }
-
-/*menu de registro*/
-
-label{
-    display: flex;
-    align-items: center;
-}
-input{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+.stock .productos ul li a {
+  display: flex;
+  justify-content: center;
 }
-
-.formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 75px;
-    
+.stock .productos ul li p {
+  display: flex;
+  justify-content: center;
 }
 
-form{
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
+.productos img {
+  width: 100px;
 }
 
+/*# sourceMappingURL=style.css.map */
