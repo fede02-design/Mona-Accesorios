@@ -1,6 +1,7 @@
 header{
     background-color: $ColorPrimarioMona;
-    div{
+    .container_menu{
+        width: 100%;
         ul{
             display: flex;
             justify-content: space-between;

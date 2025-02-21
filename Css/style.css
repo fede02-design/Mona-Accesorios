@@ -31,16 +31,19 @@ body {
 header {
   background-color: antiquewhite;
 }
-header div ul {
+header .container_menu {
+  width: 100%;
+}
+header .container_menu ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 20px;
 }
-header div ul li .img_logo {
+header .container_menu ul li .img_logo {
   width: 150px;
 }
-header div ul li .img_user {
+header .container_menu ul li .img_user {
   width: 50px;
 }
 
