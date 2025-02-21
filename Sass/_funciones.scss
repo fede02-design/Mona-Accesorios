@@ -1,0 +1,24 @@
+@import "variables";
+
+@mixin centrar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin botones{
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@mixin aumento($scale: 1.1, $transition-time: 0.3s) {
+    transition: transform $transition-time ease-in-out;
+    
+    &:hover {
+        transform: scale($scale);
+    }
+}
+
+
+    

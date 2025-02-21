@@ -9,7 +9,6 @@ header{
             li{
                 .img_logo{
                     width: 150px;
-                    animation: move-box 1.5s infinite alternate;
                 }
                 .img_user{
                     width: 50px; 
@@ -17,20 +16,9 @@ header{
             }
         }
     }
-    .container_search{
-        display: flex;
-        justify-content: center;
-    }
 }
 
-@keyframes move-box{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(10px);
-    }
-}
+
 
 
 

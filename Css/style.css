@@ -5,9 +5,29 @@
 }
 
 body {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(45deg, rgb(218, 173, 69), white, rgb(255, 224, 168));
+  background-size: 300% 300%;
+  animation: color 15s ease-in-out infinite;
+  font-family: "League Spartan", serif;
 }
 
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+/*media query imagenes*/
+/*hay que eliminar ".productos" dentro del media, ya que al incluirlo en el scss se ubica dentro del mismo*/
 header {
   background-color: antiquewhite;
 }
@@ -19,48 +39,79 @@ header div ul {
 }
 header div ul li .img_logo {
   width: 150px;
-  animation: move-box 1.5s infinite alternate;
 }
 header div ul li .img_user {
   width: 50px;
 }
-header .container_search {
+
+/*media query imagenes*/
+/*hay que eliminar ".productos" dentro del media, ya que al incluirlo en el scss se ubica dentro del mismo*/
+.container_search {
   display: flex;
   justify-content: center;
+  padding-top: 15px;
 }
 
-@keyframes move-box {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(10px);
-  }
-}
 .carrusel {
-  display: grid;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
 }
 .carrusel h1 {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 23px;
 }
 .carrusel .carrusel_1 {
-  width: 300px;
+  width: 250px;
+  height: 100%;
+  border: 2.5px solid brown;
+  border-radius: 30px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .stock h2 {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-size: 20px;
 }
 .stock .productos {
   position: relative;
   right: 17px;
 }
+@media (min-width: 500px) {
+  .stock .productos ul {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+  }
+  .stock .productos img {
+    width: 200px;
+  }
+}
+@media (min-width: 800px) {
+  .stock .productos .productos img {
+    width: 300px;
+  }
+}
 .stock .productos ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
   list-style: none;
+}
+.stock .productos ul li {
+  transition: transform 0.3s ease-in-out;
+}
+.stock .productos ul li:hover {
+  transform: scale(1.1);
 }
 .stock .productos ul li a {
   display: flex;
@@ -70,9 +121,108 @@ header .container_search {
   display: flex;
   justify-content: center;
 }
+.stock .productos ul li img {
+  border-radius: 10px;
+  border: 1.5px solid brown;
+}
 
 .productos img {
-  width: 100px;
+  width: 170px;
+}
+
+.cont-wsp .wsp {
+  position: fixed;
+  width: 200px;
+}
+
+.contenedor_ojotas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+}
+.contenedor_ojotas .img_grande {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.contenedor_ojotas .img_grande .img_cel {
+  width: 170px;
+  object-fit: contain;
+  border: 2px solid rgba(135, 121, 70, 0.813);
+}
+.contenedor_ojotas .descripcion {
+  font-size: 80%;
+  padding-top: 15px;
+}
+
+aside {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+aside .descripcion {
+  background-color: rgba(185, 137, 41, 0.171);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+main .contenedor_log {
+  background-color: rgba(128, 128, 128, 0.247);
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 25px;
+  margin: 10px;
+}
+main .contenedor_log .log {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+main .contenedor_log .menu_login {
+  display: grid;
+  justify-content: space-around;
+  text-align: center;
+}
+main .contenedor_log .menu_login .contenedor {
+  padding-bottom: 30px;
+}
+main .contenedor_log .menu_login .contenedor .inicioS {
+  position: relative;
+  top: 10px;
+}
+main .contenedor_log .menu_login .contenedor .inicioS input {
+  width: 200px;
+}
+main .contenedor_log .menu_login .pie_login a {
+  text-decoration: none;
+  color: black;
+}
+main .contenedor_log .menu_login .pie_login .boton:hover {
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .contenedor_log .menu_login .pie_login .boton {
+  margin: 10px;
+  margin-bottom: 10px;
+}
+main .contenedor_log .menu_login .pie_login p {
+  margin-top: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

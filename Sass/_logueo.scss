@@ -1,0 +1,50 @@
+ @import "funciones";
+
+ main{
+    .contenedor_log{
+        background-color: rgba(128, 128, 128, 0.247);
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 25px;
+        margin: 10px;
+        .log{
+            @include centrar;
+            position: relative;
+            top: 10px;
+        }
+        .menu_login{
+            display: grid;
+            justify-content: space-around;
+            text-align: center;
+            .contenedor{
+                padding-bottom: 30px;
+                .inicioS{
+                    position: relative;
+                    top: 10px;
+                    input{
+                        width: 200px;
+                    }
+                }
+            }
+            .pie_login{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                .boton:hover{
+                    @include botones;
+                }
+                .boton{
+                    margin: 10px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+    
+    
+ }

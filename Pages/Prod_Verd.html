@@ -6,6 +6,9 @@
     <title>Mona Accesorios - Ojota Negra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header> <!--Menu H/Logo/Usuario-->
@@ -15,7 +18,7 @@
                     <a href="/index.html"><img class="img_logo" src="/Assets/imagenes/logo.png" alt="img_logo"></a>
                 </li>
                 <li>
-                    <a href=""><img class="img_user" src="/Assets/imagenes/user.png" alt="img_user"></a>
+                    <a href="./Login.html"><img class="img_user" src="/Assets/imagenes/user.png" alt="img_user"></a>
                 </li>
             </ul>
         </div>
@@ -34,21 +37,21 @@
     
     <main>
         <div class="img_grande">
-            <img src="/Assets/imagenes/naranja 3.jpeg" alt="img_naranj">
+            <img src="/Assets/imagenes/verde 3.jpeg" alt="img_verd">
         </div>
         <div class="descripcion">
-            <p>Set de playa que incluye un par de ojotas bordadas naranja, con tobillera y bolso a tono. Alto de taco: 1,4 cm</p>
+            <p>Set de playa que incluye un par de ojotas bordadas verde, con tobillera y bolso a tono. Alto de taco: 1,4 cm</p>
         </div>
         <!--boton de eleccion-->
         <div class="dropdown">
-            <button>Talles</button>
-            <div class="dropdown-content">
-                <p>xs</p>
-                <p>m</p>
-                <p>l</p>
-                <p>xl</p>
-                <p>xxl</p>          
-            </div>
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Comprar</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/Pages/Compra.html">Talle 38</a></li>
+                <li><a class="dropdown-item" href="/Pages/Compra.html">Talle 39</a></li>
+                <li><a class="dropdown-item" href="/Pages/Compra.html">Talle 40</a></li>
+                <li><a class="dropdown-item" href="/Pages/Compra.html">Talle 41</a></li>
+                <li><a class="dropdown-item" href="/Pages/Compra.html">Talle 42</a></li>
+            </ul>
         </div>
         <div class="comprar">
             <button class="btn bg-warning w-50 btn-outline-dark"><a href="/Pages/Compra.html" class="text-dark">comprar</a></button>

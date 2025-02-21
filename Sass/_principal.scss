@@ -1,12 +1,33 @@
-.carrusel{
-    display: grid;
+@import "funciones";
+@import "variables";
+@import "mediaQ";
+
+.container_search{
+    display: flex;
     justify-content: center;
+    padding-top: 15px;
+}
+
+.carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
     h1{
         display: flex;
         justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 23px;
     }
     .carrusel_1{
-        width: 300px;
+        width: 250px;
+        height: 100%;   
+        border: 2.5px solid brown;
+        border-radius: 30px;
+        object-fit: cover;
+        overflow: hidden;
     }
 }
 
@@ -14,14 +35,23 @@
     h2{
         display: flex;
         justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        font-size: 20px;
     }
     .productos{
+        @include pantalla;
+        
         position: relative;
         right: 17px;
         ul{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
             list-style: none;
+            li{
+                @include aumento;
+            }
             li a{
                 display: flex;
                 justify-content: center;
@@ -30,12 +60,25 @@
                 display: flex;
                 justify-content: center;
             }
+            li img{
+                border-radius: 10px;
+                border: 1.5px solid brown;
+                
+            }
         }
+        
     }
 }
 
 .productos img{
     width: $ImagenStock;
+}
+
+.cont-wsp{
+    .wsp{
+       position: fixed;
+       width: 200px;
+    }
 }
 
 
