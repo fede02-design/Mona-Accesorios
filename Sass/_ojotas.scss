@@ -5,7 +5,15 @@
     grid-template-columns: 1fr 1fr;
     text-align: center;
     justify-content: center;
-    padding: 5px;
+    padding: 20px;
+    .venta{
+        background-color: rgba(128, 128, 128, 0.123);
+        height: 100%;
+        .talles .dropdown{
+            position:relative;
+            bottom: 10px;
+        }
+    }
     .img_grande{
         display: flex;
         justify-content: center;
@@ -27,14 +35,21 @@
 }
 
 aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(185, 137, 41, 0.171);
+
+}
+
+aside .detalles{
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    .descripcion{
-        background-color: rgba(185, 137, 41, 0.171);
-    }
+    height: 100%;
 }
 
 footer{
